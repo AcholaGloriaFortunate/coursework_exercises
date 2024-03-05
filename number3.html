@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Find the Maximum of Three Numbers</h1>
+    
+        <div class="maximum">
+            
+            <div class="input-group">
+                <label for="num1">Enter first number:</label>
+                <input type="text" id="num1">
+            </div>
+            <div class="input-group">
+                <label for="num2">Enter second number:</label>
+                <input type="text" id="num2">
+            </div>
+            <div class="input-group">
+                <label for="num3">Enter third number:</label>
+                <input type="text" id="num3">
+            </div>
+            <button class="max" onclick="findMax()">Find Maximum</button>
+            <p id="result"></p>
+        </div>
+    <script>
+    function findMax() {
+      
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        let num3 = parseFloat(document.getElementById("num3").value);
+    
+       
+        if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+            document.getElementById("result").innerText = "Please enter valid numbers.";
+            return;
+        }
+        }
+    </script>
+    
+</body>
+</html>

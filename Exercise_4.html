@@ -1,0 +1,26 @@
+<!--Write a button element, it should do something e.g Alert Jane
+     when someone clicks on it.-->
+     
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+     </head>
+     <body>
+         <button id="myButton">Click me</button>
+     <script>
+         //getting reference button to the button element
+         const button= document.getElementById('myButton');
+     
+         //adding event listener to the button
+         button.addEventListener('click',function(){
+     
+             //alert Jane when button is presed
+             alert('Jane');
+         })
+     </script>
+     
+     </body>
+     </html>
